@@ -29,17 +29,13 @@ Thumbs.db
 .DS_Store
 Desktop.ini
 
-# AI Models (large files, use Git LFS or upload separately)
-*.pth
-*.onnx
-*.task
-backend/models/
+# AI Models - included (total < 10MB, within GitHub limits)
 
-# Unpacked docs (auto-generated)
+# Unpacked docs (auto-generated, not needed)
 unpacked/
 
-# Extracted docs (personal data)
-extracted_docs/
+# Debug images in models
+backend/models/_debug_*.jpg
 
 # Environment / Config with secrets
 .env
