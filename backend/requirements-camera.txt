@@ -1,0 +1,10 @@
+# Optional: real webcam pipeline (install on top of requirements.txt)
+opencv-python>=4.9.0
+mediapipe>=0.10.14
+Pillow>=10.0.0
+
+# MiniFASNet 活体检测依赖（二选一即可）
+# 方案A: ONNX Runtime（推荐，速度快，无需GPU）
+onnxruntime>=1.18.0
+# 方案B: PyTorch（CPU版即可，如需GPU自行替换）
+# torch>=2.0.0

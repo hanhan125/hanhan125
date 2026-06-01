@@ -1,0 +1,253 @@
+.page {
+  padding: 20px 18px 28px;
+  text-align: left;
+}
+
+.topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 16px;
+  padding: 18px 18px 14px;
+  border-bottom: 1px solid var(--border);
+}
+
+.brand .title {
+  font-family: var(--heading);
+  font-size: 22px;
+  line-height: 1.2;
+  color: var(--text-h);
+}
+
+.brand .sub {
+  margin-top: 6px;
+  font-size: 14px;
+  color: var(--text);
+}
+
+.pillrow {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+
+.pill {
+  font-family: var(--mono);
+  font-size: 12px;
+  padding: 6px 10px;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  background: var(--social-bg);
+  color: var(--text-h);
+}
+
+.pill.connected {
+  border-color: rgba(34, 197, 94, 0.35);
+  background: rgba(34, 197, 94, 0.12);
+}
+.pill.connecting {
+  border-color: rgba(234, 179, 8, 0.35);
+  background: rgba(234, 179, 8, 0.12);
+}
+.pill.disconnected {
+  border-color: rgba(239, 68, 68, 0.35);
+  background: rgba(239, 68, 68, 0.12);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  gap: 16px;
+  padding: 16px 18px 0;
+}
+
+.card {
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 14px 14px 12px;
+  background: rgba(255, 255, 255, 0.02);
+}
+
+.cardTitle {
+  font-family: var(--heading);
+  color: var(--text-h);
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-bottom: 10px;
+}
+
+label {
+  font-size: 12px;
+  color: var(--text);
+}
+
+select,
+button,
+input {
+  font: 14px/1.2 var(--sans);
+  padding: 8px 10px;
+  border-radius: 10px;
+  border: 1px solid var(--border);
+  background: var(--bg);
+  color: var(--text-h);
+}
+
+input {
+  min-width: 140px;
+}
+
+.row.between {
+  justify-content: space-between;
+  align-items: center;
+}
+
+.btnSmall {
+  font-size: 13px;
+  padding: 6px 10px;
+}
+
+.addStudentForm {
+  margin-bottom: 12px;
+  padding: 10px 12px;
+  border-radius: 10px;
+  border: 1px dashed var(--border);
+  background: rgba(255, 255, 255, 0.02);
+}
+
+button {
+  cursor: pointer;
+}
+button:disabled {
+  opacity: 0.55;
+  cursor: not-allowed;
+}
+
+.error {
+  margin-top: 10px;
+  font-size: 13px;
+  padding: 10px 12px;
+  border-radius: 10px;
+  border: 1px solid rgba(239, 68, 68, 0.35);
+  background: rgba(239, 68, 68, 0.12);
+  color: var(--text-h);
+}
+
+.info {
+  margin-top: 10px;
+  font-size: 13px;
+  padding: 10px 12px;
+  border-radius: 10px;
+  border: 1px solid rgba(34, 197, 94, 0.35);
+  background: rgba(34, 197, 94, 0.1);
+  color: var(--text-h);
+}
+
+.muted {
+  color: var(--text);
+  font-size: 13px;
+}
+.strong {
+  color: var(--text-h);
+}
+
+.table {
+  display: grid;
+  gap: 8px;
+}
+
+.thead {
+  display: grid;
+  grid-template-columns: 1.5fr 0.7fr 0.6fr 1.3fr 1.1fr;
+  gap: 10px;
+  font-size: 12px;
+  color: var(--text);
+  padding: 6px 8px;
+}
+
+.trow {
+  width: 100%;
+  text-align: left;
+  display: grid;
+  grid-template-columns: 1.5fr 0.7fr 0.6fr 1.3fr 1.1fr;
+  gap: 10px;
+  padding: 10px 10px;
+  border-radius: 12px;
+  border: 1px solid var(--border);
+  background: rgba(255, 255, 255, 0.01);
+}
+
+.trow.active {
+  border-color: var(--accent-border);
+  box-shadow: 0 0 0 2px rgba(170, 59, 255, 0.12);
+}
+
+.tag {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--mono);
+  font-size: 12px;
+  padding: 4px 8px;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  color: var(--text-h);
+  width: fit-content;
+}
+.status-present {
+  border-color: rgba(34, 197, 94, 0.35);
+  background: rgba(34, 197, 94, 0.12);
+}
+.status-late {
+  border-color: rgba(245, 158, 11, 0.35);
+  background: rgba(245, 158, 11, 0.12);
+}
+.status-absent {
+  border-color: rgba(239, 68, 68, 0.35);
+  background: rgba(239, 68, 68, 0.12);
+}
+.status-none {
+  opacity: 0.75;
+}
+
+.score {
+  font-family: var(--mono);
+  font-size: 20px;
+  color: var(--text-h);
+}
+
+.span2 {
+  grid-column: 1 / span 2;
+}
+
+.chart {
+  margin-top: 10px;
+}
+
+.footer {
+  padding: 16px 18px 0;
+}
+
+@media (max-width: 980px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+  .span2 {
+    grid-column: 1 / span 1;
+  }
+  .thead,
+  .trow {
+    grid-template-columns: 1.2fr 0.7fr 0.6fr;
+  }
+  .thead > :nth-child(n + 4),
+  .trow > :nth-child(n + 4) {
+    display: none;
+  }
+}
