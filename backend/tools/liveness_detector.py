@@ -472,10 +472,8 @@ class LivenessDetector:
         else:
             # 假脸时返回对应类别的概率作为置信度
             live_score = float(probs[pred_class])
-            # 注意：当前模型权重可能不准确（下载的预训练文件问题），
-            # 暂时默认通过，不拦截签到和注意力提交。
-            # 替换为正确的模型文件后改为 is_live = False 即可启用拦截。
-            is_live = True
+            # 假脸攻击，拒绝签到和注意力提交
+            is_live = False
 
         return is_live, live_score, label_en
 
